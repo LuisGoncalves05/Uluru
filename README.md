@@ -12,16 +12,17 @@ A small Uluru puzzle solver written in Prolog.
 ### Requirements
 - swipl
 
+### Compile
+
+`swipl -o uluru -c project.pl`
+
 ### Run
-```bash
-swipl
-?- [project].
-```
+
+`./uluru`
 
 ### Example Usage
 ```bash
-swipl
-?- [project].
+./uluru
 ?- example(1, _E), solve(_E, Solutions).
 _E = [next_to(white, orange), next_to(black, black), across(yellow, orange), next_to(green, yellow), position(blue, [1, 2, 6]), across(yellow, blue)],
 Solutions = [yellow, green, white, orange, black, blue] ;
